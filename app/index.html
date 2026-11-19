@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PALMERA BAY — GTA VI Trophy Guide</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <p class="eyebrow">Leonida &middot; PlayStation 5 &middot; 55 trophies &middot; offline, single-player</p>
+  <h1>PALMERA BAY <span>&mdash; GTA VI Trophy Guide</span></h1>
+  <p class="sub">Every trophy with its official name, description and grade, a cited guide in our own words, a roadmap to the platinum, and a tracker that saves in your browser. No online trophies. No Rockstar artwork — this look is our own.</p>
+  <div class="progress-wrap" aria-label="Progress">
+    <div class="progress-line"><strong id="progressText">0 of 55 earned</strong><span id="gradeText">0 platinum &middot; 0 gold &middot; 0 silver &middot; 0 bronze</span></div>
+    <div class="bar"><div id="barFill" class="bar-fill" style="width:0%"></div></div>
+  </div>
+  <p class="alert"><strong>&#9888; Only 1 possibly missable:</strong> <strong>Positive Mental Attitude</strong> — meditate with Lucia on Jason&rsquo;s balcony in Chapter 1, before the chapter ends. There is no mission replay: keep a manual save at the start and end of every chapter (15 save slots). Cheats disable trophies and saving.</p>
+</header>
+
+<section class="toolbar" aria-label="Tracker controls">
+  <label class="search">Search <input id="search" type="search" placeholder="Trophy name or keyword&hellip;" autocomplete="off"></label>
+  <div class="kinds" id="kinds" role="group" aria-label="Filter by kind">
+    <button type="button" data-kind="all" class="on">All 55</button>
+    <button type="button" data-kind="story">Story</button>
+    <button type="button" data-kind="missable">Missable</button>
+    <button type="button" data-kind="collectibles">Collectibles</button>
+    <button type="button" data-kind="activities">Activities</button>
+    <button type="button" data-kind="online">Online</button>
+  </div>
+  <label>Grade <select id="grade"><option value="all">All grades</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select></label>
+  <label class="check"><input id="hideEarned" type="checkbox"> Hide earned</label>
+  <label class="check"><input id="spoiler" type="checkbox"> Spoiler-safe: hide story &amp; hidden names until earned</label>
+  <div class="io">
+    <button id="export" type="button">Export progress</button>
+    <label class="import">Import progress <input id="import" type="file" accept="application/json,.json"></label>
+    <button id="reset" type="button">Reset</button>
+  </div>
+  <p id="filterNote" class="note"></p>
+</section>
+
+<section class="roadmap" id="roadmap" aria-label="Roadmap to the platinum">
+  <h2>Roadmap to the platinum &mdash; <span id="roadmapCounts">about 200 hours, 1 playthrough</span></h2>
+  <p class="roadmap-intro">PowerPyx rates the platinum 4/10 and about 200 hours: the story takes 60&ndash;80 hours, the 100% checklist about 100, and Strangers &amp; Freaks plus cleanup about 10. One playthrough is enough; free roam continues after the credits.</p>
+  <ol class="stages">
+    <li><strong>Stage 1 &mdash; Story, Chapters 1&ndash;2 (start here)</strong><span id="stage1"></span><br>Finish Gone Fishing, Chapter 1 and Chapter 2. Do Lucia&rsquo;s balcony meditation in Chapter 1 (see Positive Mental Attitude). Scan vehicles with WAiNK and study animals with binoculars as you go — both count toward 100% later.</li>
+    <li><strong>Stage 2 &mdash; Story, Chapters 3&ndash;5 &amp; the final mission</strong><span id="stage2"></span><br>Complete Chapters 3 and 4 and the final mission for the gold. Duo free roam (from Coffee Break) unlocks the partner trophies: Hot Together and Retail Therapy. Bank-vault robberies open in Chapter 4.</li>
+    <li><strong>Stage 3 &mdash; Stranger strands &amp; character questlines</strong><span id="stage3"></span><br>Finish 8 Strangers &amp; Freaks strands (Kirk, Kyle, Yago, Pilot Pete and more) and the final missions for Andy, Kenton, Billy, Randy, Tyrone and Bret. All stay available after the story.</li>
+    <li><strong>Stage 4 &mdash; Collectibles, activities &amp; the 100% checklist</strong><span id="stage4"></span><br>The big grind: 250 stunts (300 for 100%), 42 Shooting Range golds, 14 drone-race locations, 18 meditation spots, 3 card sets, 100 WAiNK locations, 50 challenges (70 for 100%), 100 vehicles, 52 areas of Leonida, 9 gangs, 8 garages, 10 Scooter Bros registrations — then A Long Road (gold) for 100% completion.</li>
+    <li><strong>Stage 5 &mdash; Cleanup &amp; platinum</strong><span id="stage5"></span><br>Mop up whatever is left — the delayed pops, the money trophies ($250,000 laundered, $100,000 spent) and the 500 criminal-profile actions — and Vice Got a Price! unlocks by itself.</li>
+  </ol>
+</section>
+
+<main class="layout">
+  <section class="list-col" aria-label="Trophy checklist">
+    <h2 id="listHeading">Checklist &mdash; 55 trophies</h2>
+    <ul id="rows" class="rows"></ul>
+    <p id="emptyNote" class="note" hidden>No trophies match this filter.</p>
+  </section>
+  <aside class="detail" id="detail" aria-label="Trophy guide" aria-live="polite">
+    <p class="detail-empty">Select a trophy on the left to read its guide and its source.</p>
+  </aside>
+</main>
+
+<footer>
+  <h2>Sources &amp; honesty notes</h2>
+  <ul>
+    <li>Official names, descriptions and grades as published on PlayStation, via Exophase / PSNProfiles (cross-checked by Planet GTA 6): <a href="https://www.planetgta6.com/en/gta-6-trophies/" target="_blank" rel="noopener">planetgta6.com/en/gta-6-trophies/</a> — 27 visible, 28 hidden.</li>
+    <li>Guides, roadmap and counts: PowerPyx, GTA 6 Trophy Guide &amp; Roadmap: <a href="https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/" target="_blank" rel="noopener">powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/</a> and its 100% Completion Checklist: <a href="https://www.powerpyx.com/gta-6-100-completion-checklist-guide/" target="_blank" rel="noopener">powerpyx.com/gta-6-100-completion-checklist-guide/</a>. Every guide above is written in our own words; a fact without a cited source is labelled as coming from the official description, or as unconfirmed.</li>
+    <li>Unconfirmed at launch (19 Nov 2026): In The Beginning…, Bad Luck, I Guess and Ten Pin have no verified unlock method yet — PowerPyx lists them as unknown. The game released 19 Nov 2026, so early guidance may change.</li>
+    <li>Progress is saved only in this browser (localStorage) and can be exported as JSON. This guide works fully offline and fetches nothing.</li>
+  </ul>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>

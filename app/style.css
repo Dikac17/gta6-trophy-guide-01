@@ -1,0 +1,98 @@
+/* PALMERA BAY — GTA VI Trophy Guide. Dark sunset/neon theme, original look, no Rockstar art. */
+:root {
+  --bg: #12081c;
+  --panel: #1d0f2b;
+  --panel2: #251238;
+  --line: #4a2a63;
+  --text: #f5eefb;
+  --muted: #c9b3dd;
+  --accent: #ff7a3d;
+  --accent2: #ff3d81;
+  --gold: #ffd23d;
+  --good: #4ade80;
+  --danger: #ff5d5d;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #1a0b2e 0%, var(--bg) 30%, #0d0616 100%);
+  color: var(--text);
+  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+a { color: var(--gold); }
+.hero, .toolbar, .roadmap, .layout, footer { max-width: 1240px; margin: 0 auto; padding: 0 20px; }
+.hero { padding-top: 26px; }
+.eyebrow { color: var(--gold); letter-spacing: .14em; text-transform: uppercase; font-size: 12px; font-weight: 700; margin: 0 0 6px; }
+h1 { font-size: 34px; line-height: 1.1; margin: 0 0 8px; }
+h1 span { color: var(--accent); }
+.sub { color: var(--muted); max-width: 900px; margin: 0 0 14px; font-size: 15px; }
+.progress-wrap { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 16px; }
+.progress-line { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.progress-line span { color: var(--muted); font-size: 14px; }
+.bar { height: 12px; background: #0d0616; border-radius: 6px; margin-top: 8px; overflow: hidden; }
+.bar-fill { height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent2), var(--gold)); border-radius: 6px; }
+.alert { background: #3d1408; border: 1px solid var(--accent); border-radius: 10px; padding: 10px 14px; font-size: 15px; }
+.toolbar { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; margin-top: 16px; padding: 14px 16px; display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; }
+.toolbar label { font-size: 14px; }
+.search input { width: 260px; max-width: 70vw; }
+input, select, button { font: inherit; color: var(--text); background: #0d0616; border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; }
+button { cursor: pointer; background: var(--panel2); }
+button:hover { border-color: var(--accent); }
+.kinds { display: flex; flex-wrap: wrap; gap: 6px; }
+.kinds button.on { background: var(--accent); color: #1a0b2e; border-color: var(--accent); font-weight: 700; }
+.check { display: flex; align-items: center; gap: 6px; }
+.check input { width: 18px; height: 18px; accent-color: var(--accent); }
+.io { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.import input { border: none; padding: 0; background: none; font-size: 13px; max-width: 190px; }
+.note { color: var(--muted); font-size: 14px; flex-basis: 100%; margin: 0; }
+.roadmap { margin-top: 18px; }
+.roadmap h2, .list-col h2 { font-size: 22px; margin: 0 0 6px; }
+.roadmap-intro { color: var(--muted); margin: 0 0 10px; }
+.stages { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; }
+.stages li { background: var(--panel); border: 1px solid var(--line); border-left: 5px solid var(--accent); border-radius: 10px; padding: 12px 14px; font-size: 14px; }
+.stages li:nth-child(2) { border-left-color: var(--accent2); }
+.stages li:nth-child(3) { border-left-color: var(--gold); }
+.stages li:nth-child(4) { border-left-color: var(--good); }
+.stages li:nth-child(5) { border-left-color: #7dd3fc; }
+.stages strong { display: block; font-size: 15px; margin-bottom: 4px; }
+.stages li span { color: var(--gold); font-weight: 700; }
+.layout { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 18px; margin-top: 18px; align-items: start; }
+.rows { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.rows li { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; display: grid; grid-template-columns: 28px 1fr auto; gap: 10px; align-items: start; cursor: pointer; }
+.rows li:hover { border-color: var(--accent); }
+.rows li.selected { border-color: var(--gold); box-shadow: 0 0 0 1px var(--gold); }
+.rows li.earned { opacity: .62; }
+.rows input { width: 20px; height: 20px; margin-top: 2px; accent-color: var(--good); cursor: pointer; }
+.t-name { font-weight: 700; font-size: 15px; }
+.t-desc { color: var(--muted); font-size: 14px; }
+.t-meta { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 5px; }
+.chip { font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; border-radius: 20px; padding: 2px 8px; border: 1px solid var(--line); color: var(--muted); }
+.chip.platinum { color: #1a0b2e; background: var(--gold); border-color: var(--gold); }
+.chip.gold { color: #1a0b2e; background: #f5b301; border-color: #f5b301; }
+.chip.silver { color: #1a0b2e; background: #d7dbe2; border-color: #d7dbe2; }
+.chip.bronze { color: #fff; background: #a06a2c; border-color: #a06a2c; }
+.chip.missable { color: #fff; background: var(--danger); border-color: var(--danger); }
+.chip.hidden { color: var(--gold); border-color: var(--gold); }
+.chip.kind { color: var(--text); }
+.grade-dot { font-size: 22px; line-height: 1; }
+.detail { position: sticky; top: 12px; background: var(--panel2); border: 1px solid var(--gold); border-radius: 12px; padding: 16px 18px; }
+.detail h2 { font-size: 24px; margin: 0 0 4px; line-height: 1.2; }
+.detail .official { color: var(--muted); font-style: italic; margin: 0 0 10px; }
+.detail h3 { font-size: 13px; text-transform: uppercase; letter-spacing: .1em; color: var(--gold); margin: 14px 0 4px; }
+.detail p { margin: 0; font-size: 15px; }
+.detail .source { font-size: 13px; color: var(--muted); word-break: break-word; }
+.detail .earn-btn { margin-top: 14px; background: var(--good); color: #0d1a10; border-color: var(--good); font-weight: 700; }
+.detail-empty { color: var(--muted); }
+footer { margin-top: 26px; padding-bottom: 30px; color: var(--muted); font-size: 14px; }
+footer h2 { color: var(--text); font-size: 18px; }
+footer li { margin-bottom: 6px; }
+/* Compact screenshot view (?shot=...): hide the intro copy so the
+   checklist and the open guide fit one 1280x720 frame. */
+body.shot-view .sub, body.shot-view .alert { display: none; }
+body.shot-view .hero { padding-top: 12px; }
+body.shot-view h1 { font-size: 26px; }
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; }
+  .detail { position: static; }
+  h1 { font-size: 26px; }
+}
